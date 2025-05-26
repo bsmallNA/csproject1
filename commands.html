@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Discord Bot Info</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+<body class="light">
+  <nav class="navbar">
+      
+        <a class="nav-link" href="index.html">
+          <span class="link-text">Home</span>
+        </a>
+      
+      
+        <a class="nav-link" href="commands.html">
+          <span class="link-text">Commands</span>
+        </a>
+      
+      
+        <a class="nav-link" href="timer.html">
+          <span class="link-text">Invite</span>
+        </a>
+      
+    </ul>
+  </nav>
+
+  <main>
+    <header>
+      <center><h1>Bot Commands</h1></center>
+    </header>
+    <div class="container">
+
+ <div class="dropdown">
+  <button onclick="toggleDropdown()" class="dropbtn">Select Command Type</button>
+  <div id="dropdownContent" class="dropdown-content">
+    <a href="#" onclick="showSection('general')">General</a>
+    <a href="#" onclick="showSection('countdown')">Countdown</a>
+    <a href="#" onclick="showSection('tasks')">Tasks</a>
+    <a href="#" onclick="showSection('fun')">Fun</a>
+  </div>
+</div>
+
+<div id="general" class="command-section">
+  <h2>General Commands</h2>
+  <ul>
+    <li><code>!b help</code> – Show all available commands.</li>
+  </ul>
+</div>
+
+<div id="countdown" class="command-section" style="display: none;">
+  <h2>Countdown Commands</h2>
+  <ul>
+    <li><code>!b c [seconds]</code> – Starts a countdown.</li>
+    <li><code>!b playc</code> – Resumes the countdown.</li>
+    <li><code>!b stopc</code> – Stops the countdown.</li>
+  </ul>
+</div>
+
+<div id="tasks" class="command-section" style="display: none;">
+  <h2>Task Commands</h2>
+  <ul>
+    <li><code>!b addtask [task]</code> – Add a task.</li>
+    <li><code>!b removetask [#]</code> – Remove a task.</li>
+    <li><code>!b done [#]</code> – Mark as done.</li>
+    <li><code>!b tasks</code> – Show list.</li>
+    <li><code>!b cleartasks</code> – Clear list.</li>
+  </ul>
+</div>
+
+<div id="fun" class="command-section" style="display: none;">
+  <h2>Fun Commands</h2>
+  <ul>
+    <li><code>!b inspireme</code> – Get a motivational quote.</li>
+  </ul>
+</div>
+
+      </ul>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
