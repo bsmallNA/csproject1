@@ -17,7 +17,7 @@ body {
  /* background-image: url('https://media.discordapp.net/attachments/1372950539306012844/1376239350953672754/image10.png?ex=68349a46&is=683348c6&hm=edadeac732f897f1a425ba058488b7b342a60bc7e67d1b1361ea24a4114ab541&=&format=webp&quality=lossless'); */
   background-size: cover;
 
-  overflow: hidden;
+  overflow: auto;
   
 }
 
